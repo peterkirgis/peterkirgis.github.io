@@ -22,7 +22,7 @@ repository               : "peterkirgis/peterkirgis.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : profile.png
   name             : "Peter Kirgis"
   pronouns         : # example: "she/her"  
   bio              : "I am an MPA at Princeton University studying public policy and machine learning. My main interests are in moral philosophy, artificial intelligence, and social safety net implementation."
