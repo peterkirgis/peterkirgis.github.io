@@ -75,14 +75,20 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+# Research Category - The following the list of research categories and their headings
+research_category:
+  - id: "ai"
+    title: "AI"
+  - id: "ppe"
+    title: "Political Economy"
+  
+presentation_category:
+  - id: "academic"
+    title: "Academic Presentations"
+  - id: "professional"
+    title: "Professional Talks"
+  - id: "personal"
+    title: "Personal"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -213,15 +219,15 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  research:
     output: true
     permalink: /:collection/:path/
-  publications:
+  presentations:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  miscellaneous:
     output: true
-    permalink: /:collection/:path/
+    permalink: /miscellaneous/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -247,19 +253,19 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _presentations
   - scope:
       path: ""
-      type: teaching
+      type: presentations
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # research
   - scope:
       path: ""
-      type: publications
+      type: research
     values:
       layout: single
       author_profile: true

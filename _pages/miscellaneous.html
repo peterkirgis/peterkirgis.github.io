@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "Miscellaneous"
+permalink: /miscellaneous/
+author_profile: true
+---
+
+{% include base_path %}
+
+<ul>
+  {% for item in site.miscellaneous %}
+    <li><a href="{{ base_path }}{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>

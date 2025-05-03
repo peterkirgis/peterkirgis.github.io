@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Presentations"
+permalink: /presentations/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% for cat in site.presentation_category %}
+  {% assign posts_in_cat = site.presentations | where: "category", cat.id %}
+  {% if posts_in_cat.size > 0 %}
+    <h2>{{ cat.title }}</h2><hr/>
+    {% for post in posts_in_cat reversed %}
+      {% include archive-single.html type="list" %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
