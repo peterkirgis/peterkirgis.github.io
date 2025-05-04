@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Peter Kirgis"
 title_separator          : "-"
 name                     : &name "Peter Kirgis"
-description              : &description "MPA at Princeton University"
+description              : &description "This is the personal website for Peter Kirgis, an MPA student at Princeton University, which hosts his research, essays, and presentations."
 url                      : https://peterkirgis.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "peterkirgis/peterkirgis.github.io"
@@ -311,6 +311,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag
 
 # Mimic GitHub Pages with --safe
 whitelist:
