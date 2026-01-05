@@ -5,10 +5,12 @@ permalink: /miscellaneous/
 author_profile: true
 ---
 
-{% include base_path %}
-
-<ul>
+<div class="archive-list">
   {% for item in site.miscellaneous %}
-    <li><a href="{{ base_path }}{{ item.url }}">{{ item.title }}</a></li>
+    <article class="archive-item">
+      <h3 class="archive-item-title">
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      </h3>
+    </article>
   {% endfor %}
-</ul>
+</div>

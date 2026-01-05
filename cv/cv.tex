@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage{times}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{nopageno}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Peter Kirgis CV},
+    pdfpagemode=FullScreen,
+    }
+
+%------------------------- Formatting Tweaks ---------------------------
+\linespread{1}                       % slightly tighter line spacing
+\setlength{\parindent}{0pt}            % no paragraph indentation
+\setlist{noitemsep,topsep=0pt,partopsep=0pt,leftmargin=0.25in} % compact lists
+\titlespacing*{\section}{0pt}{1ex}{0.5ex} % compact section spacing
+
+\begin{document}
+\vspace*{-1.8cm}
+
+%--------------------------- Header ------------------------------------
+\begin{center}
+    {\LARGE \textbf{Peter Kirgis}}\\
+    \vspace{1mm}
+    42 Loyola Terrace, San Francisco 94117 \\[-2pt]
+    \href{mailto:pk7019@princeton.edu}{pk7019@princeton.edu} \;|\; \href{https://peterkirgis.github.io}{\underline{peterkirgis.github.io}}
+\end{center}
+
+%-------------------------- Education ----------------------------------
+\section*{Education}
+\hrule
+\vspace{1em}
+\textbf{Princeton School of Public and International Affairs} \hfill \textit{May 2025}\\
+Master of Public Affairs (MPA), Certificate in Statistics and Machine Learning
+\begin{itemize}
+    \item Cumulative GPA: 3.94
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Williams College} \hfill \textit{June 2020}\\
+Bachelor of Arts with Honors in Political Economy and Philosophy
+
+\vspace{1em}
+
+%--------------------------- Research ----------------------------------
+\section*{Research}
+\hrule
+\vspace{1em}
+
+\textbf{Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation} \hfill \textit{2025}\\
+Kapoor, S., Stroebl, B., \textbf{Kirgis, P.}, Nadgir, N., Siegel, Z. S., Wei, B., ... \& Narayanan, A.\\
+\textit{arXiv preprint arXiv:2510.11977}
+\begin{itemize}
+    \item Executed large-scale data analysis of 21,000+ AI agent rollouts to evaluate the capabilities and limitations of frontier AI agents.
+    \hfill \href{https://arxiv.org/pdf/2510.11977}{\underline{Paper}} \quad\textbar\quad \href{https://github.com/peterkirgis/hal-paper-analysis}{\underline{Code}}
+\end{itemize}
+
+\vspace{1em}
+
+\textbf{Differences in the Moral Foundations of Large Language Models} \hfill \textit{2025}\\
+\textbf{Kirgis, Peter}\\
+\textit{arXiv preprint arXiv:2511.11790}
+\begin{itemize}
+    \item Administered synthetic experiments to sixteen frontier large language models to elicit diverse moral judgments. Used PCA and NLP methods to explore and visualize bias and clustering of LLM responses relative to a human baseline.
+    \hfill \href{https://arxiv.org/pdf/2511.11790}{\underline{Paper}} \quad\textbar\quad \href{https://github.com/peterkirgis/llm-moral-foundations}{\underline{Code}} \quad\textbar\quad \href{https://peterkirgis.github.io/files/MFT_LLMs_slides.pdf}{\underline{Slides}}
+\end{itemize}
+
+\vspace{1em}
+
+\textbf{Desegregation Paradox? A Model of LIHTC's Effects on Economic Segregation} \hfill \textit{2024}\\
+\textbf{Kirgis, Peter} and Teddy Knox\\
+\textit{Preprint}
+\begin{itemize}
+    \item Used novel data sources to simulate the effect of redistributing LIHTC residents across US metropolitan areas and observed that LIHTC's presence is associated with a decrease in economic segregation.
+    \hfill \href{https://peterkirgis.github.io/files/LIHTC.pdf}{\underline{Paper}}
+\end{itemize}
+
+\vspace{1em}
+
+%----------------------- Presentations & Talks -------------------------
+\section*{Invited Talks}
+\hrule
+\vspace{1em}
+
+\textbf{``A Few Insights from the Analysis of Over 2,000 AI Agent Logs''} \hfill NeurIPS AI Evaluator Forum, \textit{Dec 2025}
+
+\vspace{0.5em}
+\textbf{``Is Consciousness Prerequisite for Moral Patienthood?''} \hfill ELEOS AI Consciousness Conference, \textit{Nov 2025}
+
+\vspace{0.5em}
+\textbf{``Differences in the Moral Foundations of Large Language Models''} \hfill PICSciE/CSML Colloquium, \textit{Apr 2025}
+
+\vspace{0.5em}
+\textbf{``Improving Imputation Accuracy''} \hfill Coding it Forward Fellowship Demo Day, \textit{Aug 2024}
+
+\vspace{1em}
+
+%------------------------ Professional Experience ----------------------
+\section*{Professional Experience}
+\hrule
+\vspace{1em}
+
+\textbf{Center for Information Technology Policy, Princeton University} \hfill \textit{August 2025 -- Present}\\
+\textit{Research Scientist}
+\begin{itemize}
+    \item Working with Arvind Narayanan and Zeynep Tufekci on AI evaluation and alignment projects.
+    \item Leading data visualization and analysis for the Holistic Agent Leaderboard (HAL).
+    \item Designed and implemented a data pipeline to extract and grade 100GB of agent logs using Python.
+\end{itemize}
+
+\vspace{1em}
+\textbf{United States Census Bureau (Coding it Forward)} \hfill \textit{June 2024 -- August 2024}\\
+\textit{Data Scientist Fellow}
+\begin{itemize}
+    \item Built sorting algorithms and $k$-nearest neighbors regression models in Python to improve existing imputation methods within the Economic Statistical Methods Division.
+    \item Designed Python data visualizations comparing imputation strategies across several loss functions.
+\end{itemize}
+
+\vspace{1em}
+\textbf{Commonwealth of Massachusetts} \hfill \textit{November 2021 -- July 2023}\\
+\textit{Data Analyst}
+\begin{itemize}
+    \item Led inter-agency data sharing and program evaluation efforts on behalf of the Chief Data Officer.
+    \item Designed and maintained PostgreSQL ETL pipelines and automated data workflows with Python, AWS Lambda, and Tableau.
+    \item Implemented the Commonwealth's first differential privacy algorithm on longitudinal datasets related to early childhood education and workforce development.
+\end{itemize}
+
+\end{document}

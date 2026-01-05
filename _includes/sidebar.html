@@ -1,25 +1,26 @@
-{% include base_path %}
-
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
+<aside class="sidebar">
+  {% if site.author.avatar %}
+    <img src="{{ '/images/' | append: site.author.avatar | relative_url }}"
+         alt="{{ site.author.name }}"
+         class="author-avatar">
   {% endif %}
-  </div>
-{% endif %}
+
+  <h2 class="author-name">{{ site.author.name }}</h2>
+
+  {% if site.author.bio %}
+    <p class="author-bio">{{ site.author.bio }}</p>
+  {% endif %}
+
+  <ul class="author-links">
+    {% if site.author.employer %}
+      <li>{{ site.author.employer }}</li>
+    {% endif %}
+    {% if site.author.email %}
+      <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+    {% endif %}
+    <li><a href="{{ '/files/cv.pdf' | relative_url }}">CV (PDF)</a></li>
+  </ul>
+</aside>

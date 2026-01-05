@@ -2,7 +2,8 @@
 title: "Desegregation Paradox? A Model and Simulation of LIHTC’s Effects on Economic Segregation"
 collection: research
 permalink: /research/lihtc-segregation
-excerpt: "With Teddy Knox, I run a simulation of a counterfactual distribution of low income housing without the Low Income Housing Tax Credit, the nation's largest affordable housing program. We use this simulation to characterize the impact of the program on economic segregation in American. metropolitan areas"
+excerpt: "I run a simulation of a counterfactual distribution of low income housing without the Low Income Housing Tax Credit, the nation's largest affordable housing program, to characterize the impact of the program on economic segregation."
+date: 2025-01-29
 paperurl: '/files/LIHTC.pdf'
 citation: 'Kirgis, Peter and Teddy Knox. (2025). "Desegregation Paradox? A Model and Simulation of LIHTC’s Effects on Economic Segregation." Preprint.'
 ---

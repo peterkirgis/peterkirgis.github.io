@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% if page.title %}
+  <h1 class="page-title">{{ page.title }}</h1>
+{% endif %}
+
+{% if page.venue and page.date %}
+  <p class="page-meta">
+    Presented at <em>{{ page.venue }}</em>, {{ page.date | date: "%B %d, %Y" }}
+  </p>
+{% elsif page.date and page.collection != 'miscellaneous' %}
+  <p class="page-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+{% endif %}
+
+{{ content }}
+
+{% if page.citation %}
+  <p class="text-small text-muted" style="margin-top: 2rem;">
+    <strong>Recommended citation:</strong> {{ page.citation }}
+  </p>
+{% endif %}
+
+{% if page.paperurl or page.slidesurl or page.repourl %}
+  <p class="resource-links">
+    {% if page.paperurl %}<a href="{{ page.paperurl }}">Paper</a>{% endif %}
+    {% if page.slidesurl %}<a href="{{ page.slidesurl }}">Slides</a>{% endif %}
+    {% if page.repourl %}<a href="{{ page.repourl }}">Code</a>{% endif %}
+  </p>
+{% endif %}

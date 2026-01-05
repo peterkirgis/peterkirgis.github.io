@@ -1,31 +1,27 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  {% include header.html %}
 
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+  <main class="container">
+    <div class="main-layout{% unless page.author_profile %} no-sidebar{% endunless %}">
+      {% if page.author_profile %}
+        {% include sidebar.html %}
+      {% endif %}
+      <div class="page-content">
+        {{ content }}
+      </div>
     </div>
+  </main>
 
-    {% include scripts.html %}
-
-  </body>
+  {% include footer.html %}
+</body>
 </html>

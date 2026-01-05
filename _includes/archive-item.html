@@ -1,0 +1,25 @@
+<article class="archive-item">
+  <h3 class="archive-item-title">
+    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+  </h3>
+
+  {% if item.venue and item.date %}
+    <p class="archive-item-meta">
+      <em>{{ item.venue }}</em>, {{ item.date | date: "%B %d, %Y" }}
+    </p>
+  {% elsif item.date %}
+    <p class="archive-item-meta">{{ item.date | date: "%B %d, %Y" }}</p>
+  {% endif %}
+
+  {% if item.excerpt %}
+    <p class="archive-item-excerpt">{{ item.excerpt | strip_html | truncate: 250 }}</p>
+  {% endif %}
+
+  {% if item.paperurl or item.slidesurl or item.repourl %}
+    <p class="archive-item-links">
+      {% if item.paperurl %}<a href="{{ item.paperurl }}">Paper</a>{% endif %}
+      {% if item.slidesurl %}<a href="{{ item.slidesurl }}">Slides</a>{% endif %}
+      {% if item.repourl %}<a href="{{ item.repourl }}">Code</a>{% endif %}
+    </p>
+  {% endif %}
+</article>

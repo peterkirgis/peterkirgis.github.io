@@ -1,11 +1,9 @@
 ---
-layout: single
+layout: page
 title: "Overrated/Underrated"
 permalink: /miscellaneous/over_under/
 author_profile: true
 ---
-
-{% include base_path %}
 
 Christianity  
 Lawsuits  

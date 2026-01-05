@@ -1,0 +1,34 @@
+name: Compile CV
+
+on:
+  push:
+    paths:
+      - 'cv/**'
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: cv
+
+      - name: Move PDF to files folder
+        run: mv cv/cv.pdf files/cv.pdf
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add files/cv.pdf
+          git diff --staged --quiet || git commit -m "Auto-compile CV PDF"
+          git push

@@ -1,11 +1,9 @@
 ---
-layout: single
+layout: page
 title: "My Questionnaire: 14 questions to get to know you"
 permalink: /miscellaneous/questionnaire/
 author_profile: true
 ---
-
-{% include base_path %}
 
 
 

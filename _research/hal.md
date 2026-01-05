@@ -1,0 +1,12 @@
+---
+title: "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation"
+collection: research
+permalink: /research/hal
+excerpt: "I execute a large scale data analysis of 21k AI agent rollouts across 9 benchmarks to evaluate cost-effectiveness, general problem solving capabilities, and failure modes of frontier AI agents as part of the Holistic Agent Leaderboard (HAL)."
+date: 2025-09-17
+paperurl: 'https://arxiv.org/pdf/2510.11977'
+repourl: 'https://github.com/peterkirgis/hal-paper-analysis'
+citation: 'Kapoor, S., Stroebl, B., Kirgis, P., Nadgir, N., Siegel, Z. S., Wei, B., ... & Narayanan, A. (2025). Holistic agent leaderboard: The missing infrastructure for ai agent evaluation. arXiv preprint arXiv:2510.11977.'
+---
+
+AI agents have been developed for complex real-world tasks from coding to customer service. But AI agent evaluations suffer from many challenges that undermine our understanding of how well agents really work. We introduce the Holistic Agent Leaderboard (HAL) to address these challenges. We make three main contributions. First, we provide a standardized evaluation harness that orchestrates parallel evaluations across hundreds of VMs, reducing evaluation time from weeks to hours while eliminating common implementation bugs. Second, we conduct three-dimensional analysis spanning models, scaffolds, and benchmarks. We validate the harness by conducting 21,730 agent rollouts across 9 models and 9 benchmarks in coding, web navigation, science, and customer service with a total cost of about $40,000. Our analysis reveals surprising insights, such as higher reasoning effort reducing accuracy in the majority of runs. Third, we use LLM-aided log inspection to uncover previously unreported behaviors, such as searching for the benchmark on HuggingFace instead of solving a task, or misusing credit cards in flight booking tasks. We share all agent logs, comprising 2.5B tokens of language model calls, to incentivize further research into agent behavior. By standardizing how the field evaluates agents and addressing common pitfalls in agent evaluation, we hope to shift the focus from agents that ace benchmarks to agents that work reliably in the real world.
