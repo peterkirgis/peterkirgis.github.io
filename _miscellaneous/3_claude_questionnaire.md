@@ -5,8 +5,6 @@ permalink: /miscellaneous/claude-questionnaire/
 author_profile: true
 ---
 
-# Claude Opus 4.6 Takes a Values Questionnaire
-
 *March 4, 2026*
 
 ---
