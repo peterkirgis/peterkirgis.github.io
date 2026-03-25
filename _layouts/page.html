@@ -22,9 +22,10 @@ layout: default
   </p>
 {% endif %}
 
-{% if page.paperurl or page.slidesurl or page.repourl %}
+{% if page.paperurl or page.slidesurl or page.repourl or page.websiteurl %}
   <p class="resource-links">
     {% if page.paperurl %}<a href="{{ page.paperurl }}">Paper</a>{% endif %}
+    {% if page.websiteurl %}<a href="{{ page.websiteurl }}">Website</a>{% endif %}
     {% if page.slidesurl %}<a href="{{ page.slidesurl }}">Slides</a>{% endif %}
     {% if page.repourl %}<a href="{{ page.repourl }}">Code</a>{% endif %}
   </p>

@@ -15,9 +15,10 @@
     <p class="archive-item-excerpt">{{ item.excerpt | strip_html | truncate: 250 }}</p>
   {% endif %}
 
-  {% if item.paperurl or item.slidesurl or item.repourl %}
+  {% if item.paperurl or item.slidesurl or item.repourl or item.websiteurl %}
     <p class="archive-item-links">
       {% if item.paperurl %}<a href="{{ item.paperurl }}">Paper</a>{% endif %}
+      {% if item.websiteurl %}<a href="{{ item.websiteurl }}">Website</a>{% endif %}
       {% if item.slidesurl %}<a href="{{ item.slidesurl }}">Slides</a>{% endif %}
       {% if item.repourl %}<a href="{{ item.repourl }}">Code</a>{% endif %}
     </p>

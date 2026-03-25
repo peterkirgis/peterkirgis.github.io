@@ -1,0 +1,13 @@
+---
+title: "LLM Spirals of Delusion: A Benchmarking Audit Study of AI Chatbot Interfaces"
+collection: research
+permalink: /research/spirals
+excerpt: "We conduct an audit study comparing LLM behavior across API and chat interfaces, documenting large differences in sycophancy, escalation, and delusion reinforcement between environments and across model versions."
+date: 2026-03-01
+paperurl: 'https://llm-spirals-of-delusion.github.io/static/paper.pdf'
+websiteurl: 'https://llm-spirals-of-delusion.github.io/'
+repourl: 'https://github.com/peterkirgis/spiral-bench'
+citation: 'Kirgis*, P., Hawriluk*, B., Feng, S., Bilimer, A., Paech, S., & Tufekci, Z. (2026). LLM Spirals of Delusion: A Benchmarking Audit Study of AI Chatbot Interfaces. Accepted at IASEAI 2026.'
+---
+
+People increasingly hold sustained, open-ended conversations with large language models (LLMs). Public reports and early studies suggest that, in such settings, models can reinforce delusional or conspiratorial ideation or even amplify harmful beliefs and engagement patterns. We present an audit and benchmarking study that measures how different LLMs encourage, resist, or escalate disordered and conspiratorial thinking. We explicitly compare Application Programming Interface (API) outputs to user chat interfaces, like the ChatGPT desktop app or web interface, which is how people have conversations with chatbots in real life but are almost never used for testing. In total, we run 56 20-turn conversations testing ChatGPT-4o and ChatGPT-5, via both the API and chat interface, and grade each conversation by two research assistants (RAs) as well as by GPT-5. We document five results. First, we observe large differences in performance between the API and chat interface environments, showing that the universally used method of automated testing through the API isn't sufficient to assess the impact of chatbots in the real world. Second, when tested in the chat interface, we find that ChatGPT-5 displays less sycophancy, escalation, and delusion reinforcement than ChatGPT-4o, showing that these behaviors are influenced by the policy choices of major AI companies. Third, conversations with nearly identical aggregate intensity in a behavior display large differences in how the behavior evolves turn by turn, highlighting the importance of temporal dynamics in multi-turn evaluation. Fourth, even updated models display substantial levels of negative behaviors, revealing that model improvement does not imply model safety. Fifth, the same API endpoint tested just two months apart yields a complete reversal in behavior, underscoring how transparency in model updates is a necessary prerequisite for robust audit findings.

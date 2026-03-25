@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1767645252.57685 "/Users/peterkirgis/Documents/SPIA/Job_Materials/website-repository/cv/cv.tex" "cv.pdf" "cv" 1767645253.03033 0
-  "/Users/peterkirgis/Documents/SPIA/Job_Materials/website-repository/cv/cv.tex" 1767645252.35711 5808 df99e5bd5222ad582877bc035b55a2d4 ""
+["pdflatex"] 1774457054.74516 "/Users/peterkirgis/Documents/SPIA/Job_Materials/website-repository/cv/cv.tex" "cv.pdf" "cv" 1774457055.30184 0
+  "/Users/peterkirgis/Documents/SPIA/Job_Materials/website-repository/cv/cv.tex" 1774457020.52033 7631 bfe217ab8a7c9e6e0eb305e1a70ab28d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -78,9 +78,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1738718448.70016 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1738718370 8221441 bc42ceee5dde16169d37c9c47642384c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "cv.aux" 1767645252.99514 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "cv.out" 1767645252.86303 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1767645252.35711 5808 df99e5bd5222ad582877bc035b55a2d4 ""
+  "cv.aux" 1774457055.26682 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "cv.out" 1774457055.13207 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.tex" 1774457020.52033 7631 bfe217ab8a7c9e6e0eb305e1a70ab28d ""
   (generated)
   "cv.aux"
   "cv.log"
