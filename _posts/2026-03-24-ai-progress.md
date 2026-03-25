@@ -141,7 +141,7 @@ An important finding: the more capable models show higher rates of hallucination
 
 ### Inconsistency Across Repeated Attempts
 
-This is another example from my own research. In that same [paper on agent reliability](https://arxiv.org/pdf/2602.16666), looked at how well models perform under repeated sampling of the same task, measuring three forms of consistency: outcome consistency (did you get the same result each time?), trajectory consistency (did you take the same path?), and resource consistency (how much did the cost vary?).
+This is another example from my own research. In that same [paper on agent reliability](https://arxiv.org/pdf/2602.16666), we looked at how well models perform under repeated sampling of the same task, measuring three forms of consistency: outcome consistency (did you get the same result each time?), trajectory consistency (did you take the same path?), and resource consistency (how much did the cost vary?).
 
 <figure>
   <img src="/assets/images/ai-progress/consistency.png" alt="Consistency Results">
@@ -184,4 +184,4 @@ It's worth noting that Google's Gemini 3.1 Pro, which performs comparably to the
 
 ## Concluding Thoughts
 
-AI is not a monolith. There are so many dimensions of AI progress incompletely captured here or ignored entirely. Nevertheless, I believe that the dimensions of progress analyzed here — common sense, situtaional awareness, efficiency, calibration, multi-modal computer use, and self-improvement — are capabilities worth tracking. My governing philosophy is that we should spend more time thinking about the ability of this technology to compensate for its limitations and persist digitally, rather than its ability to "one-shot" complex tasks, even though these are certainly correlated. We don't need AI to be any "smarter" to change the world; we just need it to be less "stupid." I think we're getting there.
+AI is not a monolith. There are so many dimensions of AI progress incompletely captured here or ignored entirely. Nevertheless, I believe that the dimensions of progress analyzed here — common sense, situational awareness, efficiency, calibration, multi-modal computer use, and self-improvement — are capabilities worth tracking. My governing philosophy is that we should spend more time thinking about the ability of this technology to compensate for its limitations and persist digitally, rather than its ability to "one-shot" complex tasks, even though these are certainly correlated. We don't need AI to be any "smarter" to change the world; we just need it to be less "stupid." I think we're getting there.
