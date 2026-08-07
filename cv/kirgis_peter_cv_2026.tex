@@ -1,0 +1,175 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.9in]{geometry}
+\usepackage{times}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{nopageno}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Peter Kirgis Resume},
+    pdfpagemode=FullScreen,
+    }
+
+%------------------------- Formatting Tweaks ---------------------------
+\linespread{1.0}
+\setlength{\parindent}{0pt}
+
+% Section headings: small caps, bold, with a rule underneath
+\titleformat{\section}
+  {\large\scshape\bfseries}{}{0em}{}[{\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{1.6ex}{1ex}
+
+% Hanging-indent publication entry: newest listed first
+\newcommand{\pub}[2]{%
+  \par\vspace{0.5em}%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{0.3in}%
+    \setlength{\itemindent}{-0.3in}%
+    \setlength{\topsep}{0pt}\setlength{\parsep}{0pt}\setlength{\partopsep}{0pt}%
+  }
+  \item #1%
+  \par\vspace{0.2em}\small #2%
+  \end{list}%
+}
+
+% Talk entry: title/venue wraps on the left, date stays fixed on the right
+\newcommand{\talk}[2]{%
+  \par\vspace{0.4em}%
+  \noindent\parbox[t]{0.83\textwidth}{\raggedright #1}\hfill\parbox[t]{0.14\textwidth}{\raggedleft #2}\par%
+}
+
+\begin{document}
+\vspace*{-1cm}
+
+%--------------------------- Header ------------------------------------
+\begin{minipage}[b]{0.60\textwidth}
+    {\huge\scshape Peter Kirgis}\\[0.45em]
+    {\small\itshape Research Scientist}\\[1pt]
+    {\small Center for Information Technology Policy, Princeton University}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.38\textwidth}
+    \raggedleft\footnotesize
+    \href{mailto:pk7019@princeton.edu}{pk7019@princeton.edu}\\[3pt]
+    \href{https://peterkirgis.github.io}{peterkirgis.github.io}\\[3pt]
+    \href{https://scholar.google.com/citations?user=fqSbuGUAAAAJ}{Google Scholar}~~$\cdot$~~\href{https://github.com/peterkirgis}{GitHub}
+\end{minipage}
+
+\vspace{0.6em}
+
+%--------------------------- Summary -----------------------------------
+\section*{Summary}
+
+Research scientist focused on rigorous empirical evaluation of the reliability, safety, and real-world capability of frontier AI systems and agents. Author of research at leading venues (ICML, ICLR, IASEAI), with hands-on experience designing and running large-scale evaluation and data pipelines. Combines technical expertise in machine learning and data science with public-policy training to translate AI evaluation into actionable insights for policymakers and the public.
+
+%------------------------ Professional Experience ----------------------
+\section*{Experience}
+
+\textbf{Center for Information Technology Policy}, Princeton University \hfill August 2025 -- Present\\
+\textit{Research Scientist}
+\begin{itemize}[leftmargin=0.25in,noitemsep,topsep=2pt]
+    \item Lead harness engineering, manage a team of six analysts, and direct all reporting for a series of long-horizon assessments of frontier AI agents on real-world tasks such as autonomous software development and autonomous AI research.
+    \item Led a multi-organization initiative defining and measuring threats to credible AI agent evaluation; demonstrated on $\tau$-Bench Airline that reported agent performance was under-elicited by nearly 50\%.
+    \item Co-develop an AI agent reliability index that decomposes agent reliability into twelve metrics and benchmarks 14 frontier models.
+    \item Led an audit study of sycophancy and delusion reinforcement across ChatGPT's chat and API interfaces, surfacing large safety-relevant behavioral gaps.
+    \item Collaborate directly with Arvind Narayanan and Zeynep Tufekci on frontier AI research, and support their widely read public writing on AI, including columns in \textit{The New York Times} and essays on Substack.
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{SPAR (Supervised Program for Alignment Research)} \hfill January 2026 -- May 2026\\
+\textit{Research Intern}
+\begin{itemize}[leftmargin=0.25in,noitemsep,topsep=2pt]
+    \item Designed and ran an experiment measuring value drift in frontier LLMs by having them iteratively revise their own constitutions, model specs, and system prompts across 20 rounds.
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{United States Census Bureau} (Coding it Forward) \hfill June 2024 -- August 2024\\
+\textit{Data Scientist Fellow}
+\begin{itemize}[leftmargin=0.25in,noitemsep,topsep=2pt]
+    \item Built sorting algorithms and $k$-nearest neighbors regression models in Python to improve existing imputation methods within the Economic Statistical Methods Division.
+    \item Designed Python data visualizations comparing imputation strategies across several loss functions.
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{Commonwealth of Massachusetts} \hfill November 2021 -- July 2023\\
+\textit{Data Analyst}
+\begin{itemize}[leftmargin=0.25in,noitemsep,topsep=2pt]
+    \item Led inter-agency data sharing and program evaluation efforts on behalf of the Chief Data Officer.
+    \item Designed and maintained PostgreSQL ETL pipelines and automated data workflows with Python, AWS Lambda, and Tableau.
+    \item Implemented the Commonwealth's first differential privacy algorithm on longitudinal datasets related to early childhood education and workforce development.
+\end{itemize}
+
+%--------------------------- Education ---------------------------------
+\section*{Education}
+
+\textbf{Princeton University}, School of Public and International Affairs \hfill May 2025\\
+Master of Public Affairs (MPA); Certificate in Statistics and Machine Learning\\
+\textit{Cumulative GPA: 3.94}
+
+\vspace{0.6em}
+\textbf{Williams College} \hfill June 2020\\
+Bachelor of Arts with Honors in Political Economy and Philosophy
+
+%--------------------------- Publications ------------------------------
+\section*{Selected Publications}
+
+\pub{%
+  \textbf{Kirgis, P.}, Kapoor, S., Schwartz, A., Rabanser, S., Africa, D., \ldots \& Narayanan, A. (2026). ``Can AI Agents Conduct Open-Ended AI Research? Early Evidence from Two Case Studies.'' \textit{arXiv preprint arXiv:2607.27191.} \href{https://arxiv.org/pdf/2607.27191}{Paper}.%
+}{%
+  Introduced ``shadow evaluations,'' which task frontier agents with the open-ended research question of an unpublished paper and have its original authors grade the result. Initial results found that agents handled the engineering but could not make substantial research progress.%
+}
+
+\pub{%
+  \textbf{Kirgis, P.}, Kapoor, S., Rabanser, S., Nadgir, N., Ududec, C., Dubois, M., \ldots \& Narayanan, A. (2026). ``Log Analysis is Necessary for Credible Evaluation of AI Agents.'' \textit{Accepted at ICML 2026 FAGEN Workshop.} \href{https://arxiv.org/pdf/2605.08545}{Paper}.%
+}{%
+  Argued that systematic log analysis is necessary to overcome validity threats in agent evaluation, presenting a taxonomy of threats and guiding principles. Illustrated on $\tau$-Bench Airline, revealing pass\textsuperscript{5} performance was under-elicited by nearly 50\%.%
+}
+
+\pub{%
+  Rabanser, S., Kapoor, S., \textbf{Kirgis, P.}, Liu, K., Utpala, S., \& Narayanan, A. (2026). ``Towards a Science of AI Agent Reliability.'' \textit{Accepted at ICML 2026.} \href{https://arxiv.org/pdf/2602.16666}{Paper} $\cdot$ \href{https://hal.cs.princeton.edu/reliability/}{Website}.%
+}{%
+  Proposed twelve metrics decomposing AI agent reliability along four dimensions (consistency, robustness, predictability, safety) and evaluated 14 models, finding that recent capability gains have yielded only small improvements in reliability.%
+}
+
+\pub{%
+  \textbf{Kirgis, P.}\textsuperscript{*}, Hawriluk, B.\textsuperscript{*}, Feng, S., Bilimer, A., Paech, S., \& Tufekci, Z. (2026). ``LLM Spirals of Delusion: A Benchmarking Audit Study of AI Chatbot Interfaces.'' \textit{Accepted at IASEAI 2026.} \href{https://arxiv.org/pdf/2604.06188}{Paper} $\cdot$ \href{https://llm-spirals-of-delusion.github.io/}{Website}. {\footnotesize\textsuperscript{*}Equal contribution.}%
+}{%
+  Conducted an audit study comparing LLM behavior across API and chat interfaces, documenting large differences in sycophancy, escalation, and delusion reinforcement between environments and across models.%
+}
+
+\pub{%
+  Kapoor, S., \textbf{Kirgis, P.}, Schwartz, A., Rabanser, S., Allaire, JJ., Bommasani, R., \ldots \& Narayanan, A. (2026). ``Open-World Evaluations for Measuring Frontier AI Capabilities.'' \textit{Accepted at ICML 2026 AIWILD Workshop.} \href{https://arxiv.org/pdf/2605.20520}{Paper} $\cdot$ \href{https://cruxevals.com/crux-1}{Website}.%
+}{%
+  Advocated for open-world evaluations: long-horizon, real-world tasks assessed through small-sample qualitative analysis.%
+}
+
+\pub{%
+  Nadgir, N., Kapoor, S., Liu, K., \textbf{Kirgis, P.}, Orona, M., Rabanser, S., \ldots \& Narayanan, A. (2026). ``Life After Benchmark Saturation: A Case Study of CORE-Bench.'' \textit{Accepted at ICML 2026 AIWILD Workshop.} \href{https://arxiv.org/pdf/2606.26158}{Paper}.%
+}{%
+  Showed that when a benchmark's accuracy saturates, six other dimensions of agent performance remain informative. Measured a $\sim$2$\times$ speedup from human-agent collaboration on reproducibility tasks.%
+}
+
+\pub{%
+  Kapoor, S., Stroebl, B., \textbf{Kirgis, P.}, Nadgir, N., Siegel, Z. S., Wei, B., \ldots \& Narayanan, A. (2025). ``Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation.'' \textit{Accepted at ICLR 2026.} \href{https://arxiv.org/pdf/2510.11977}{Paper} $\cdot$ \href{https://github.com/peterkirgis/hal-paper-analysis}{Code}.%
+}{%
+  Executed large-scale data analysis of 21,000+ AI agent rollouts to evaluate the capabilities and limitations of frontier AI agents.%
+}
+
+\pub{%
+  \textbf{Kirgis, P.} (2025). ``Differences in the Moral Foundations of Large Language Models.'' \textit{arXiv preprint arXiv:2511.11790.} \href{https://arxiv.org/pdf/2511.11790}{Paper} $\cdot$ \href{https://github.com/peterkirgis/llm-moral-foundations}{Code} $\cdot$ \href{https://peterkirgis.github.io/files/MFT_LLMs_slides.pdf}{Slides}.%
+}{%
+  Administered synthetic experiments to sixteen frontier LLMs to elicit moral judgments, using PCA and NLP methods to visualize bias and clustering relative to a human baseline.%
+}
+
+%----------------------- Talks & Presentations -------------------------
+\section*{Talks \& Presentations}
+
+\talk{``A Few Insights from the Analysis of Over 2,000 AI Agent Logs.'' NeurIPS AI Evaluator Forum.}{Dec 2025}
+\talk{``Is Consciousness Prerequisite for Moral Patienthood?'' ELEOS AI Consciousness Conference.}{Nov 2025}
+\talk{``Differences in the Moral Foundations of Large Language Models.'' PICSciE/CSML Colloquium.}{Apr 2025}
+
+\end{document}
