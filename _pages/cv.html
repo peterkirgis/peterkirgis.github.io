@@ -7,6 +7,65 @@ author_profile: true
 
 <p style="margin-bottom: 2em;"><a href="/files/cv.pdf">Download PDF version</a></p>
 
+<h2>Summary</h2>
+<hr>
+
+<p>Research scientist focused on rigorous empirical evaluation of the reliability, safety, and real-world capability of frontier AI systems and agents. Author of research at leading venues (ICML, ICLR, IASEAI), with hands-on experience designing and running large-scale evaluation and data pipelines. Combines technical expertise in machine learning and data science with public-policy training to translate AI evaluation into actionable insights for policymakers and the public.</p>
+
+<h2>Experience</h2>
+<hr>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>Center for Information Technology Policy, Princeton University</strong>
+    <span class="cv-date">August 2025 - Present</span>
+  </div>
+  <div><em>Research Scientist</em></div>
+  <ul>
+    <li>Lead harness engineering, manage a team of six analysts, and direct all reporting for a series of long-horizon assessments of frontier AI agents on real-world tasks such as autonomous software development and autonomous AI research.</li>
+    <li>Led a multi-organization initiative defining and measuring threats to credible AI agent evaluation; demonstrated on &tau;-Bench Airline that reported agent performance was under-elicited by nearly 50%.</li>
+    <li>Co-develop an AI agent reliability index that decomposes agent reliability into twelve metrics and benchmarks 14 frontier models.</li>
+    <li>Led an audit study of sycophancy and delusion reinforcement across ChatGPT's chat and API interfaces, surfacing large safety-relevant behavioral gaps.</li>
+    <li>Collaborate directly with Arvind Narayanan and Zeynep Tufekci on frontier AI research, and support their widely read public writing on AI, including columns in <em>The New York Times</em> and essays on Substack.</li>
+  </ul>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>SPAR (Supervised Program for Alignment Research)</strong>
+    <span class="cv-date">January 2026 - May 2026</span>
+  </div>
+  <div><em>Research Intern</em></div>
+  <ul>
+    <li>Designed and ran an experiment measuring value drift in frontier LLMs by having them iteratively revise their own constitutions, model specs, and system prompts across 20 rounds.</li>
+  </ul>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>United States Census Bureau (Coding it Forward)</strong>
+    <span class="cv-date">June 2024 - August 2024</span>
+  </div>
+  <div><em>Data Scientist Fellow</em></div>
+  <ul>
+    <li>Built sorting algorithms and k-nearest neighbors regression models in Python to improve existing imputation methods within the Economic Statistical Methods Division.</li>
+    <li>Designed Python data visualizations comparing imputation strategies across several loss functions.</li>
+  </ul>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>Commonwealth of Massachusetts</strong>
+    <span class="cv-date">November 2021 - July 2023</span>
+  </div>
+  <div><em>Data Analyst</em></div>
+  <ul>
+    <li>Led inter-agency data sharing and program evaluation efforts on behalf of the Chief Data Officer.</li>
+    <li>Designed and maintained PostgreSQL ETL pipelines and automated data workflows with Python, AWS Lambda, and Tableau.</li>
+    <li>Implemented the Commonwealth's first differential privacy algorithm on longitudinal datasets related to early childhood education and workforce development.</li>
+  </ul>
+</div>
+
 <h2>Education</h2>
 <hr>
 
@@ -29,8 +88,38 @@ author_profile: true
   <div>Bachelor of Arts with Honors in Political Economy and Philosophy</div>
 </div>
 
-<h2>Research</h2>
+<h2>Selected Publications</h2>
 <hr>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>Can AI Agents Conduct Open-Ended AI Research? Early Evidence from Two Case Studies</strong>
+    <span class="cv-date">2026</span>
+  </div>
+  <div><strong>Kirgis, P.</strong>, Kapoor, S., Schwartz, A., Rabanser, S., Africa, D., ... &amp; Narayanan, A.</div>
+  <div><em>arXiv preprint arXiv:2607.27191</em></div>
+  <ul>
+    <li>Introduced "shadow evaluations," which task frontier agents with the open-ended research question of an unpublished paper and have its original authors grade the result. Initial results found that agents handled the engineering but could not make substantial research progress.</li>
+  </ul>
+  <div class="cv-links">
+    <a href="https://arxiv.org/pdf/2607.27191">Paper</a>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>Log Analysis is Necessary for Credible Evaluation of AI Agents</strong>
+    <span class="cv-date">2026</span>
+  </div>
+  <div><strong>Kirgis, P.</strong>, Kapoor, S., Rabanser, S., Nadgir, N., Ududec, C., Dubois, M., ... &amp; Narayanan, A.</div>
+  <div><em>Accepted at ICML 2026 FAGEN Workshop</em></div>
+  <ul>
+    <li>Argued that systematic log analysis is necessary to overcome validity threats in agent evaluation, presenting a taxonomy of threats and guiding principles. Illustrated on &tau;-Bench Airline, revealing pass<sup>5</sup> performance was under-elicited by nearly 50%.</li>
+  </ul>
+  <div class="cv-links">
+    <a href="https://arxiv.org/pdf/2605.08545">Paper</a>
+  </div>
+</div>
 
 <div class="cv-entry">
   <div class="cv-header">
@@ -38,7 +127,7 @@ author_profile: true
     <span class="cv-date">2026</span>
   </div>
   <div>Rabanser, S., Kapoor, S., <strong>Kirgis, P.</strong>, Liu, K., Utpala, S., &amp; Narayanan, A.</div>
-  <div><em>arXiv preprint arXiv:2602.16666</em></div>
+  <div><em>Accepted at ICML 2026</em></div>
   <ul>
     <li>Proposed twelve metrics decomposing AI agent reliability along four dimensions (consistency, robustness, predictability, safety) and evaluated 14 models, finding that recent capability gains have yielded only small improvements in reliability.</li>
   </ul>
@@ -56,10 +145,42 @@ author_profile: true
   <div><strong>Kirgis*, P.</strong>, Hawriluk*, B., Feng, S., Bilimer, A., Paech, S., &amp; Tufekci, Z. &nbsp;(* Equal contribution)</div>
   <div><em>Accepted at IASEAI 2026</em></div>
   <ul>
-    <li>Conducted an audit study comparing LLM behavior across API and chat interfaces, documenting large differences in sycophancy, escalation, and delusion reinforcement between environments and across model versions.</li>
+    <li>Conducted an audit study comparing LLM behavior across API and chat interfaces, documenting large differences in sycophancy, escalation, and delusion reinforcement between environments and across models.</li>
   </ul>
   <div class="cv-links">
+    <a href="https://arxiv.org/pdf/2604.06188">Paper</a> |
     <a href="https://llm-spirals-of-delusion.github.io/">Website</a>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>Open-World Evaluations for Measuring Frontier AI Capabilities</strong>
+    <span class="cv-date">2026</span>
+  </div>
+  <div>Kapoor, S., <strong>Kirgis, P.</strong>, Schwartz, A., Rabanser, S., Allaire, JJ., Bommasani, R., ... &amp; Narayanan, A.</div>
+  <div><em>Accepted at ICML 2026 AIWILD Workshop</em></div>
+  <ul>
+    <li>Advocated for open-world evaluations: long-horizon, real-world tasks assessed through small-sample qualitative analysis.</li>
+  </ul>
+  <div class="cv-links">
+    <a href="https://arxiv.org/pdf/2605.20520">Paper</a> |
+    <a href="https://cruxevals.com/crux-1">Website</a>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-header">
+    <strong>Life After Benchmark Saturation: A Case Study of CORE-Bench</strong>
+    <span class="cv-date">2026</span>
+  </div>
+  <div>Nadgir, N., Kapoor, S., Liu, K., <strong>Kirgis, P.</strong>, Orona, M., Rabanser, S., ... &amp; Narayanan, A.</div>
+  <div><em>Accepted at ICML 2026 AIWILD Workshop</em></div>
+  <ul>
+    <li>Showed that when a benchmark's accuracy saturates, six other dimensions of agent performance remain informative. Measured a ~2&times; speedup from human-agent collaboration on reproducibility tasks.</li>
+  </ul>
+  <div class="cv-links">
+    <a href="https://arxiv.org/pdf/2606.26158">Paper</a>
   </div>
 </div>
 
@@ -87,7 +208,7 @@ author_profile: true
   <div><strong>Kirgis, Peter</strong></div>
   <div><em>arXiv preprint arXiv:2511.11790</em></div>
   <ul>
-    <li>Administered synthetic experiments to sixteen frontier large language models to elicit diverse moral judgments. Used PCA and NLP methods to explore and visualize bias and clustering of LLM responses relative to a human baseline.</li>
+    <li>Administered synthetic experiments to sixteen frontier LLMs to elicit moral judgments, using PCA and NLP methods to visualize bias and clustering relative to a human baseline.</li>
   </ul>
   <div class="cv-links">
     <a href="https://arxiv.org/pdf/2511.11790">Paper</a> |
@@ -96,22 +217,7 @@ author_profile: true
   </div>
 </div>
 
-<div class="cv-entry">
-  <div class="cv-header">
-    <strong>Desegregation Paradox? A Model of LIHTC's Effects on Economic Segregation</strong>
-    <span class="cv-date">2024</span>
-  </div>
-  <div><strong>Kirgis, Peter</strong> and Teddy Knox</div>
-  <div><em>Preprint</em></div>
-  <ul>
-    <li>Used novel data sources to simulate the effect of redistributing LIHTC residents across US metropolitan areas and observed that LIHTC's presence is associated with a decrease in economic segregation.</li>
-  </ul>
-  <div class="cv-links">
-    <a href="/files/LIHTC.pdf">Paper</a>
-  </div>
-</div>
-
-<h2>Invited Talks</h2>
+<h2>Talks &amp; Presentations</h2>
 <hr>
 
 <div class="cv-entry">
@@ -136,66 +242,4 @@ author_profile: true
     <span class="cv-date">Apr 2025</span>
   </div>
   <div>PICSciE/CSML Colloquium</div>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-header">
-    <strong>"Improving Imputation Accuracy"</strong>
-    <span class="cv-date">Aug 2024</span>
-  </div>
-  <div>Coding it Forward Fellowship Demo Day</div>
-</div>
-
-<h2>Professional Experience</h2>
-<hr>
-
-<div class="cv-entry">
-  <div class="cv-header">
-    <strong>Center for Information Technology Policy, Princeton University</strong>
-    <span class="cv-date">August 2025 - Present</span>
-  </div>
-  <div><em>Research Scientist</em></div>
-  <ul>
-    <li>Working with Arvind Narayanan and Zeynep Tufekci on AI agent evaluation and the societal impacts of AI.</li>
-    <li>Contributing to the development of an AI agent reliability index with the Holistic Agent Leaderboard (HAL) team.</li>
-    <li>Led an audit study of sycophancy and delusion reinforcement in ChatGPT, accepted at IASEAI 2026.</li>
-    <li>Leading a multi-organization project defining threats to credible AI agent evaluation.</li>
-    <li>Designed and implemented a data pipeline to extract and grade 100GB of agent logs using Python.</li>
-  </ul>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-header">
-    <strong>SPAR (Supervised Program for Alignment Research)</strong>
-    <span class="cv-date">January 2026 - Present</span>
-  </div>
-  <div><em>Research Intern (Part-Time)</em></div>
-  <ul>
-    <li>Working with Tim Hua to study how frontier LLMs iteratively refine their own constitutions, model specs, and system prompts.</li>
-  </ul>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-header">
-    <strong>United States Census Bureau (Coding it Forward)</strong>
-    <span class="cv-date">June 2024 - August 2024</span>
-  </div>
-  <div><em>Data Scientist Fellow</em></div>
-  <ul>
-    <li>Built sorting algorithms and k-nearest neighbors regression models in Python to improve existing imputation methods within the Economic Statistical Methods Division.</li>
-    <li>Designed Python data visualizations comparing imputation strategies across several loss functions.</li>
-  </ul>
-</div>
-
-<div class="cv-entry">
-  <div class="cv-header">
-    <strong>Commonwealth of Massachusetts</strong>
-    <span class="cv-date">November 2021 - July 2023</span>
-  </div>
-  <div><em>Data Analyst</em></div>
-  <ul>
-    <li>Led inter-agency data sharing and program evaluation efforts on behalf of the Chief Data Officer.</li>
-    <li>Designed and maintained PostgreSQL ETL pipelines and automated data workflows with Python, AWS Lambda, and Tableau.</li>
-    <li>Implemented the Commonwealth's first differential privacy algorithm on longitudinal datasets related to early childhood education and workforce development.</li>
-  </ul>
 </div>

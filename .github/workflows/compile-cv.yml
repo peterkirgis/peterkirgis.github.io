@@ -19,11 +19,11 @@ jobs:
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv.tex
+          root_file: kirgis_peter_cv_2026.tex
           working_directory: cv
 
       - name: Move PDF to files folder
-        run: mv cv/cv.pdf files/cv.pdf
+        run: mv cv/kirgis_peter_cv_2026.pdf files/cv.pdf
 
       - name: Commit and push PDF
         run: |

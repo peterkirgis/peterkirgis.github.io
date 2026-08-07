@@ -1,0 +1,11 @@
+---
+title: "Life After Benchmark Saturation: A Case Study of CORE-Bench"
+collection: research
+permalink: /research/core-bench-saturation
+excerpt: "We show that when a benchmark's accuracy saturates, six other dimensions of agent performance remain informative — construct validity, out-of-distribution generalizability, efficiency, reliability, model versus scaffold contributions, and uplift from human-agent collaboration."
+date: 2026-06-23
+paperurl: 'https://arxiv.org/pdf/2606.26158'
+citation: 'Nadgir, N., Kapoor, S., Liu, K., Kirgis, P., Orona, M., Rabanser, S., ... & Narayanan, A. (2026). Life After Benchmark Saturation: A Case Study of CORE-Bench. Accepted at ICML 2026 AIWILD Workshop.'
+---
+
+When a benchmark's accuracy saturates, it is often retired and replaced with a more challenging version. We show that this approach privileges accuracy and misses the opportunity to study six other key dimensions of agent performance: construct validity issues such as shortcuts, out-of-distribution generalizability, efficiency, reliability, the relative importance of the model versus the scaffold, and uplift from human-agent collaboration. We use CORE-Bench Hard, a benchmark for computational reproducibility of scientific code, as a case study to demonstrate that measuring agents along these dimensions yields meaningful insights into agent performance even after accuracy saturates. First, we surface threats to construct validity in CORE-Bench Hard that are difficult to anticipate with less capable agents. We introduce an improved benchmark, CORE-Bench v1.1, and an out-of-distribution task suite, CORE-Bench OOD. Second, we find that despite accuracy saturation, CORE-Bench v1.1 remains useful for measuring efficiency, reliability, model performance, and scaffold performance. Finally, we conduct a small-scale randomized experiment to measure uplift from human-agent collaboration on real-world computational reproducibility tasks. We find a statistically significant speedup by about a factor of two — likely underestimated due to one-fifth of human-only reproductions reaching the time limit before completing — and describe various other findings. Together, our contributions present a more rigorous alternative to the dominant accuracy-centric evaluation paradigm.
